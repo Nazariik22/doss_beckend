@@ -1,0 +1,18 @@
+# Node.js
+node_modules/
+*/node_modules/
+*/package-lock.json
+
+# Середовище
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Архіви
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
