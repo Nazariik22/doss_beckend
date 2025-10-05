@@ -15,8 +15,13 @@
         .then(res => res.json())
         .then(data => {
             console.log("Tracking success:", data);
-            data.error==="Access denied. IP blocked." && alert('Вас заблоковано адміністратором сайту!');
-            window.location.href = "https://www.google.com";
+
+            if (data.error === "Access denied. IP blocked.") {
+                alert("Вас заблоковано адміністратором сайту!");
+                setTimeout(() => {
+                    window.location.href = "https://www.google.com";
+                }, 2000);
+            }
         })
         .catch(err => {
             console.error("Tracking error:", err);
