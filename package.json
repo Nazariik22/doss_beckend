@@ -1,15 +1,19 @@
 {
   "name": "doss",
   "version": "1.0.0",
+  "description": "DDoS protection backend for Express + MongoDB",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
+  "engines": {
+    "node": ">=18.x",
+    "npm": ">=9.x"
+  },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
