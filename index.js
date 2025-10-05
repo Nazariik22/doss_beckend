@@ -44,7 +44,9 @@ app.use("/api/sites", siteRoutes);
 app.use("/api/stats", statsRoutes);
 app.use("/api/ip", ipRoutes);
 app.use("/api/logs", logRoutes);
-
+app.get("/", (req, res) => {
+    res.send("API is running...");
+});
 
 app.use(errorHandler);
 
