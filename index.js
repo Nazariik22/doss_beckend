@@ -25,7 +25,9 @@ const app = express();
 connectDB();
 
 
-app.use(cors());
+app.use(cors({
+    origin: "*" // заміни на фронтенд
+}));
 app.use(helmet());
 app.use(morgan("dev"));
 app.use(express.json());

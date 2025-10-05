@@ -5,7 +5,7 @@
     const userAgent = navigator.userAgent;
     const timestamp = new Date().toISOString();
 
-    fetch("https://dossbeckend-c8b3f5f403da.herokuapp.com//api/logs/track", {
+    fetch("https://dossbeckend-c8b3f5f403da.herokuapp.com/api/logs/track", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
